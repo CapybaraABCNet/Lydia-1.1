@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Merriweather:wght@400&display=swap" rel="stylesheet">
+    <title>Lydia</title>
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .m {
+    color:black;
+    border-radius: 15px; /* Сглаженные углы */
+    padding: 20px;
+    text-align: center; /* Центрирование текста */
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: appear 2s forwards;
+    margin-bottom: 20px; /* Отступ снизу */
+    
+}
+@keyframes appear {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        img {
+            width: 300px; /* Ширина изображения */
+            border-radius: 15px; /* Сглаженные углы для изображения */
+            opacity: 0;
+            animation: imageFadeIn 2s forwards;
+            display: block; /* Отображение изображения как блочного элемента */
+            margin: 20px auto; /* Центрирование изображения */
+        }
+
+        @keyframes imageFadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        header {
+            background-color: #00e9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,
+        td {
+            padding: 20px;
+        }
+        th {
+            text-align: left;
+        }
+.container {
+            width: 80%; /* Ширина контейнера */
+            max-width: 800px; /* Максимальная ширина */
+            margin: 20px auto; /* Центрирование контейнера */
+            padding: 20px; /* Внутренние отступы */
+            background-color: #fff; /* Цвет фона контейнера */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень */
+            border-radius: 8px; /* Скругление углов */
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1 class="m">Лидия</h1>
+    <p class="m">100 шагов до моря!!!</p>
+    <nav>
+        <a class="m" href="index.html">Главная страница</a>
+        <a class="m" href="nomer.html">Виды номеров</a>
+        <a class="m" href="gjs.html">Виды гостиницы</a>
+        <a class="m" href="loo.html">Виды Лоо</a>
+        <a class="m" href="k.html">Контакты и стоимость</a>
+    </nav>
+</header>
+<h1 class="m">Фотогалерея гостиницы</h1>
+<img src="vid11-m.jpeg">
+<img src="vid12-m.jpeg">
+<img src="vid13-m.jpeg">
+<img src="vid14-m.jpeg">
+<img src="vid15-m.jpeg">
+<img src="vid16-m.jpeg">
+<img src="vid17-m.jpeg">
+<img src="vid18-m.jpeg">
+</body>
+</html>
